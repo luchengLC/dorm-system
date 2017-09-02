@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../docs/favicon.ico">
+
+
+    <title>宿舍管理系统-登录</title>
+
+    <link href="./static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="./static/css/login.css" rel="stylesheet">
+    <link href="./static/css/carousel.css" rel="stylesheet">
+
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                    <a class="navbar-brand" href="#">学生宿舍管理系统</a>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+                <div id="navbar" class="collapse navbar-collapse">
+                    <!-- <a class="navbar-brand" href="#">学生宿舍管理系统</a> -->
+                    <ul class="nav navbar-nav">
+                        <!--默认主页原本是学生登录页面，只有当管理员点击“管理员登录，才进入管理员登录界面-->
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img class="first-slide" src="image/home/home_1.jpg" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>
+                            1. 为弘扬中华传统文化，丰富宿生文化生活，4月22日上午9：30，弘毅书院主办的首场“毅师一席谈”在图书馆报告厅开讲。林凯龙副教授围绕“潮汕民居”为大家解读潮汕传统建筑的文化密码，来自广东省实验中学的100多名师生也聆听了此次讲座。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img class="second-slide" src="image/home/home_2.png" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>
+                            2. 为弘扬中华传统文化，丰富宿生文化生活，4月22日上午9：30，弘毅书院主办的首场“毅师一席谈”在图书馆报告厅开讲。林凯龙副教授围绕“潮汕民居”为大家解读潮汕传统建筑的文化密码，来自广东省实验中学的100多名师生也聆听了此次讲座。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="third-slide" src="image/home/home_3.jpg" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <p>
+                            3. 为弘扬中华传统文化，丰富宿生文化生活，4月22日上午9：30，弘毅书院主办的首场“毅师一席谈”在图书馆报告厅开讲。林凯龙副教授围绕“潮汕民居”为大家解读潮汕传统建筑的文化密码，来自广东省实验中学的100多名师生也聆听了此次讲座。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-8">
+
+                <img src="image/home/bg.png" width=90%>
+
+            </div>
+
+
+            <div class="col-lg-4 col-sm-4">
+
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#student_login" data-toggle="tab">
+                                 学生登录
+                            </a>
+                    </li>
+                    <li><a href="#admin_login" data-toggle="tab">管理员登录</a>
+
+                    </li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="student_login">
+
+                        <div class="form-signin">
+                            <form class="form-signin">
+                                <h3 class="form-signin-heading">学生宿舍系统</h2>
+                                    <input type="text" id="inputAccount" class="form-control" placeholder="校园网账号" required autofocus style="margin-top: 20px">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required style="margin-top: 20px">
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="remember-me">记住账号密码
+                                        </label>
+                                    </div>
+
+                                    <!--这里未使用js判断，仅假设账号密码正确，能够点击进入界面-->
+                                    <!--到时候删去下行的 href-->
+                                    <br>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit" href="#homeOfStudent">登录</button>
+
+                            </form>
+                            <a href="#forget" id="forget">忘记密码</a>
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="admin_login">
+                        <div class="form-signin">
+                            <form class="form-signin">
+                                <h3 class="form-signin-heading">宿舍管理系统</h2>
+                                    <input type="text" id="inputAccount" class="form-control" placeholder="校园网账号" required autofocus style="margin-top: 20px">
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required style="margin-top: 20px">
+
+                                    <div class="checkbox">
+                                        <label>
+                                                <input type="checkbox" value="remember-me">记住账号密码
+                                        </label>
+                                    </div>
+
+                                    <!--这里未使用js判断，仅假设账号密码正确，能够点击进入界面-->
+                                    <!--到时候删去下行的 href-->
+                                    <br>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit" href="#homeOfStudent">登录</button>
+
+                            </form>
+                            <a href="#forget" id="forget">忘记密码</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <br>
+
+        <footer style="margin-top:40px">
+            <p class="pull-right"><a href="#">回到顶部</a></p>
+            <p>© 2017 汕头大学</p>
+        </footer>
+
+
+    </div>
+
+
+
+    <script src="../../docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./static/js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="./static/js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+</body>
+
+</html>
